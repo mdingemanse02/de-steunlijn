@@ -37,8 +37,9 @@ Ga daarna naar <http://localhost:8000>.
 ├── contact.html        # Contactpagina (/contact)
 ├── README.md
 ├── assets/
-│   ├── logo.jpg        # Originele logo (bronbestand)
-│   ├── favicon.png     # Favicon (32×32, gegenereerd uit logo.jpg)
+│   ├── logo.png        # Logo (transparant, bronbestand)
+│   ├── logo.jpg        # Oude logo (alleen nog in de hero)
+│   ├── favicon.png     # Favicon (32×32, gegenereerd uit logo.png)
 │   └── apple-touch-icon.png  # Apple-touch-icon (180×180)
 ├── css/
 │   └── styles.css      # Alle styling (design tokens, componenten, responsive)
@@ -104,7 +105,7 @@ Het rode scheepstouw uit het logo komt subtiel terug in het ontwerp:
 
 ## Favicon opnieuw genereren
 
-De favicons zijn gegenereerd uit `assets/logo.jpg`. Om ze opnieuw te genereren
+De favicons zijn gegenereerd uit `assets/logo.png`. Om ze opnieuw te genereren
 (bijvoorbeeld na een nieuw logo), gebruik je een afbeeldingsbewerker of een
 PowerShell-script met `System.Drawing` om het logo te schalen naar 32×32
 (`favicon.png`) en 180×180 (`apple-touch-icon.png`).
