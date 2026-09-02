@@ -1,0 +1,11 @@
+# Besturingssysteem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# Lokale tooling
+.claude/

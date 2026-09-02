@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | De Steunlijn — externe vertrouwenspersoon financiële sector</title>
+  <meta name="description" content="Neem contact op met De Steunlijn voor een externe vertrouwenspersoon in de financiële sector. Plan een vrijblijvende kennismaking.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="De Steunlijn">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Contact | De Steunlijn">
+  <meta property="og:description" content="Plan een vrijblijvende kennismaking voor een externe vertrouwenspersoon in de financiële sector.">
+  <!-- TODO: vervang de domeinnaam door de echte productie-URL -->
+  <meta property="og:url" content="https://www.desteunlijn.nl/contact.html">
+  <meta property="og:image" content="https://www.desteunlijn.nl/assets/logo.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <!-- ===================== Header / navigatie ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="De Steunlijn — naar de homepage">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Logo De Steunlijn" width="88" height="48">
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu openen">
+        <svg class="nav-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+
+      <nav class="nav" id="site-nav" data-nav aria-label="Hoofdnavigatie">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn btn--accent nav__cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== Contact intro ===================== -->
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-title">Neem contact op</h1>
+        <p>Wilt u meer weten over een externe vertrouwenspersoon voor uw organisatie? Neem contact op — wij reageren doorgaans binnen één werkdag.</p>
+      </div>
+    </section>
+
+    <!-- ===================== Contactformulier + gegevens ===================== -->
+    <section class="section" aria-label="Contactformulier en contactgegevens">
+      <div class="container contact-layout">
+
+        <div class="contact-form">
+          <h2>Plan een kennismaking</h2>
+          <p class="contact-form__intro">Vul het formulier in en wij nemen contact met u op voor een vrijblijvend gesprek.</p>
+
+          <form data-contact-form novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="naam">Naam <span class="required" aria-hidden="true">*</span><span class="visually-hidden">(verplicht)</span></label>
+                <input type="text" id="naam" name="naam" autocomplete="name" required placeholder="Uw naam">
+              </div>
+
+              <div class="form-field">
+                <label for="bedrijf">Bedrijfsnaam <span class="required" aria-hidden="true">*</span><span class="visually-hidden">(verplicht)</span></label>
+                <input type="text" id="bedrijf" name="bedrijf" autocomplete="organization" required placeholder="Uw organisatie">
+              </div>
+
+              <div class="form-field">
+                <label for="email">E-mailadres <span class="required" aria-hidden="true">*</span><span class="visually-hidden">(verplicht)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="naam@bedrijf.nl">
+              </div>
+
+              <div class="form-field">
+                <label for="telefoon">Telefoonnummer <span class="form-hint">(optioneel)</span></label>
+                <input type="tel" id="telefoon" name="telefoon" autocomplete="tel" placeholder="+31 (0)6 12 34 56 78">
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="bericht">Bericht <span class="required" aria-hidden="true">*</span><span class="visually-hidden">(verplicht)</span></label>
+                <textarea id="bericht" name="bericht" required placeholder="Vertel ons kort over uw organisatie en uw vraag."></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--accent btn--lg">Verstuur bericht</button>
+              <p class="form-note">Velden met een <span class="required" aria-hidden="true">*</span> zijn verplicht.</p>
+            </div>
+
+            <div class="form-success" data-form-success role="status" aria-live="polite" tabindex="-1" hidden>
+              <h3>Bedankt voor uw bericht</h3>
+              <p>Uw bericht is ontvangen. Wij nemen zo spoedig mogelijk contact met u op — doorgaans binnen één werkdag.</p>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <div class="contact-card">
+            <h2>Direct contact</h2>
+            <ul class="contact-card__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                <div>
+                  <strong>E-mailadres</strong>
+                  <a href="mailto:info@desteunlijn.nl">info@desteunlijn.nl</a>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <strong>Telefoonnummer</strong>
+                  <a href="tel:+31201234567">+31 (0)20 123 45 67</a>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong>Adres</strong>
+                  <span>Voorbeeldstraat 1<br>1234 AB Amsterdam</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h2>Kantoortijden</h2>
+            <ul class="contact-card__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                <div>
+                  <strong>Maandag t/m vrijdag</strong>
+                  <span>09:00 – 17:00 uur</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="brand" href="index.html" aria-label="De Steunlijn — naar de homepage">
+            <img class="brand__logo" src="assets/logo.jpg" alt="Logo De Steunlijn" width="88" height="48">
+          </a>
+          <p>De Steunlijn koppelt financiële instellingen aan ervaren, geregistreerde externe vertrouwenspersonen. Onafhankelijk, discreet en gespecialiseerd in de financiële sector.</p>
+        </div>
+
+        <nav aria-label="Footer navigatie">
+          <h2>Navigatie</h2>
+          <ul class="site-footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#waarom">Waarom een vertrouwenspersoon</a></li>
+            <li><a href="index.html#aanbod">Onze dienst</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2>Contact</h2>
+          <ul class="site-footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              <span>info@desteunlijn.nl</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+31 (0)20 123 45 67</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Voorbeeldstraat 1, 1234 AB Amsterdam</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> De Steunlijn. Alle rechten voorbehouden.</p>
+        <ul class="site-footer__legal">
+          <li><a href="#">Privacyverklaring</a></li>
+          <li><a href="#">Algemene voorwaarden</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
