@@ -38,7 +38,6 @@ Ga daarna naar <http://localhost:8000>.
 ├── README.md
 ├── assets/
 │   ├── logo.png        # Logo (transparant, bronbestand)
-│   ├── logo.jpg        # Oude logo (alleen nog in de hero)
 │   ├── favicon.png     # Favicon (32×32, gegenereerd uit logo.png)
 │   └── apple-touch-icon.png  # Apple-touch-icon (180×180)
 ├── css/
