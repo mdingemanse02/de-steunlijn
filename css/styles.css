@@ -479,6 +479,7 @@ p {
   max-width: 520px;
   height: auto;
   border-radius: var(--radius);
+  mix-blend-mode: multiply;
 }
 
 /* 9. Sectie: waarom
