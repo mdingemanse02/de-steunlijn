@@ -71,6 +71,11 @@ vervangen door de echte gegevens:
 | Quote (vertrouwen-sectie) | `[Naam], [Functie], [Organisatie]` |
 | Privacyverklaring / Algemene voorwaarden | `href="#"` (nog geen pagina's) |
 | Open Graph-domein (`og:url`, `og:image`) | `https://www.desteunlijn.nl` (placeholder) |
+| Web3Forms access key (contactformulier) | `VUL_HIER_JE_ACCESS_KEY_IN` |
+
+Het contactformulier verstuurt via [Web3Forms](https://web3forms.com). Na
+registratie op web3forms.com ontvang je op `info@desteunlijn.nl` een access key;
+vul die in op de plek van `VUL_HIER_JE_ACCESS_KEY_IN` in `contact.html`.
 
 ## Kleuren
 

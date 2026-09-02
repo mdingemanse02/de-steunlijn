@@ -894,6 +894,33 @@ p {
   font-size: 0.9375rem;
 }
 
+.form-error {
+  margin-top: var(--space-5);
+  background: var(--red-50);
+  border: 1px solid #f3c2c2;
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  color: var(--ink);
+}
+
+.form-error[hidden] {
+  display: none;
+}
+
+.form-error h3 {
+  margin-bottom: var(--space-1);
+}
+
+.form-error p {
+  font-size: 0.9375rem;
+}
+
+.form-error a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .contact-aside {
   display: grid;
   gap: var(--space-5);

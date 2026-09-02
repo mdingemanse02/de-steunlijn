@@ -49,17 +49,22 @@
     });
   }
 
-  /* 4. Contactformulier: validatie + bevestigingsmelding */
+  /* 4. Contactformulier: validatie + verzenden via Web3Forms */
   var form = document.querySelector('[data-contact-form]');
   if (form) {
     var success = document.querySelector('[data-form-success]');
+    var error = document.querySelector('[data-form-error]');
+    var submitButton = form.querySelector('button[type="submit"]');
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      // Verberg een eerdere bevestiging bij een nieuwe poging
+      // Verberg eerdere meldingen bij een nieuwe poging
       if (success) {
         success.hidden = true;
+      }
+      if (error) {
+        error.hidden = true;
       }
 
       // Front-end validatie (HTML5-constraints)
@@ -69,14 +74,48 @@
         return;
       }
 
-      // Toon bevestigingsmelding
-      if (success) {
-        success.hidden = false;
-        success.focus();
+      // Verzend via Web3Forms (fetch, geen paginawissel)
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Verzenden…';
       }
 
-      form.reset();
-      form.classList.remove('was-validated');
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Netwerkfout');
+          }
+          return response.json();
+        })
+        .then(function (data) {
+          if (!data.success) {
+            throw new Error(data.message || 'Verzenden mislukt');
+          }
+
+          if (success) {
+            success.hidden = false;
+            success.focus();
+          }
+
+          form.reset();
+          form.classList.remove('was-validated');
+        })
+        .catch(function () {
+          if (error) {
+            error.hidden = false;
+            error.focus();
+          }
+        })
+        .finally(function () {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Verstuur bericht';
+          }
+        });
     });
   }
 })();

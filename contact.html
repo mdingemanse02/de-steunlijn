@@ -62,7 +62,12 @@
           <h2>Plan een kennismaking</h2>
           <p class="contact-form__intro">Vul het formulier in en wij nemen contact met u op voor een vrijblijvend gesprek.</p>
 
-          <form data-contact-form novalidate>
+          <form data-contact-form action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- TODO: vervang de access key door die van web3forms.com (info@desteunlijn.nl) -->
+            <input type="hidden" name="access_key" value="VUL_HIER_JE_ACCESS_KEY_IN">
+            <input type="hidden" name="subject" value="Nieuw bericht via de website van De Steunlijn">
+            <input type="hidden" name="from_name" value="De Steunlijn website">
+            <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
             <div class="form-grid">
               <div class="form-field">
                 <label for="naam">Naam <span class="required" aria-hidden="true">*</span><span class="visually-hidden">(verplicht)</span></label>
@@ -98,6 +103,11 @@
             <div class="form-success" data-form-success role="status" aria-live="polite" tabindex="-1" hidden>
               <h3>Bedankt voor uw bericht</h3>
               <p>Uw bericht is ontvangen. Wij nemen zo spoedig mogelijk contact met u op — doorgaans binnen één werkdag.</p>
+            </div>
+
+            <div class="form-error" data-form-error role="alert" tabindex="-1" hidden>
+              <h3>Er is iets misgegaan</h3>
+              <p>Uw bericht kon niet worden verstuurd. Probeer het opnieuw, of mail ons direct op <a href="mailto:info@desteunlijn.nl">info@desteunlijn.nl</a>.</p>
             </div>
           </form>
         </div>
