@@ -7,7 +7,7 @@
    3.  Typografie
    4.  Layout (container, secties, section-head)
    5.  Knoppen
-   6.  Touw-motief (rope-line, rope-divider, knot-list, step-ring)
+   6.  Touw-motief (rope-divider, knot-list, step-ring)
    7.  Header & navigatie
    8.  Hero
    9.  Sectie: waarom
@@ -192,26 +192,6 @@ p {
   color: rgba(255, 255, 255, 0.82);
 }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: var(--space-3);
-}
-
-/* Donkerder rood op de lichtblauwe tint voor voldoende contrast (WCAG AA) */
-.section--tint .eyebrow {
-  color: var(--red-700);
-}
-
-/* Wit op de donkerblauwe sectie (rood op blauw heeft onvoldoende contrast) */
-.section--blue .eyebrow {
-  color: var(--white);
-}
-
 /* 5. Knoppen
    ========================================================================== */
 .btn {
@@ -262,17 +242,6 @@ p {
 
 /* 6. Touw-motief
    ========================================================================== */
-/* Dunne, touw-achtig gestileerde lijn (diagonale twist) */
-.rope-line {
-  height: 5px;
-  border-radius: 3px;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--red) 0 3px,
-    var(--white) 3px 6px
-  );
-}
-
 /* Divider tussen secties: lijn met een knoop in het midden */
 .rope-divider {
   display: flex;
@@ -462,11 +431,6 @@ p {
   /* structurele wrapper voor de hero-tekst; geen eigen styling */
 }
 
-.hero__accent {
-  width: 72px;
-  margin-bottom: var(--space-5);
-}
-
 .hero h1 {
   margin-bottom: var(--space-4);
 }
@@ -510,38 +474,11 @@ p {
   justify-content: center;
 }
 
-.hero__card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  padding: var(--space-6);
+.hero__image {
   width: 100%;
-  max-width: 460px;
-}
-
-.hero__card img {
-  width: 100%;
+  max-width: 520px;
   height: auto;
-  border-radius: var(--radius-sm);
-}
-
-.hero__card-caption {
-  margin-top: var(--space-4);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--line);
-  font-size: 0.875rem;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.hero__card-caption svg {
-  width: 16px;
-  height: 16px;
-  color: var(--red);
-  flex: none;
+  border-radius: var(--radius);
 }
 
 /* 9. Sectie: waarom
@@ -600,7 +537,8 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-5);
-  counter-reset: step;
+  list-style: none;
+  padding: 0;
 }
 
 .step {
@@ -1067,7 +1005,7 @@ p {
     order: -1;
   }
 
-  .hero__card {
+  .hero__image {
     max-width: 100%;
   }
 

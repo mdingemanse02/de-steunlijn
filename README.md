@@ -65,8 +65,8 @@ vervangen door de echte gegevens:
 | Locatie | Placeholder |
 | --- | --- |
 | E-mailadres (footer + contactpagina) | `info@desteunlijn.nl` |
-| Telefoonnummer | `+31 (0)20 123 45 67` |
-| Adres | `Voorbeeldstraat 1, 1234 AB Amsterdam` |
+| Telefoonnummer | `+31 (0)6 835 762 02` |
+| Adres | `Voetjesstraat 86C, 3081 HT Rotterdam` |
 | Kantoortijden | `ma–vr 09:00–17:00` |
 | Quote (vertrouwen-sectie) | `[Naam], [Functie], [Organisatie]` |
 | Privacyverklaring / Algemene voorwaarden | `href="#"` (nog geen pagina's) |
@@ -87,7 +87,6 @@ De kleuren zijn gedefinieerd als CSS-variabelen bovenaan `css/styles.css`
 
 Het rode scheepstouw uit het logo komt subtiel terug in het ontwerp:
 
-- **Hero-accentlijn** — een dunne, touw-achtig gestileerde lijn onder de eyebrow.
 - **Sectie-dividers** — een lijn met een knoop-icoon in het midden.
 - **Bullets** — knoop-icoon in plaats van standaard stipjes (`.knot-list`).
 - **Stapnummers** — genummerde cirkels met een rode "touwring".
