@@ -526,6 +526,10 @@ p {
   font-size: 0.96875rem;
 }
 
+.why-card p a {
+  text-decoration: underline;
+}
+
 /* 10. Sectie: aanbod
    ========================================================================== */
 .offer-list {
