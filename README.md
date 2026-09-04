@@ -35,8 +35,8 @@ Ga daarna naar <http://localhost:8000>.
 .
 ├── index.html          # Landingspagina (/)
 ├── contact.html        # Contactpagina (/contact)
-├── blog.html           # Blogoverzicht (/blog)
-├── blog-template.html  # Template voor een blogartikel
+├── info.html           # Info-overzicht (/info)
+├── info-template.html  # Template voor een artikel
 ├── README.md
 ├── assets/
 │   ├── logo.png        # Logo (transparant, bronbestand)
@@ -60,8 +60,8 @@ Teksten staan rechtstreeks in de HTML en zijn daardoor eenvoudig te wijzigen.
   vertrouwen, CTA-banner en footer.
 - **Contactpagina** (`contact.html`): intro, contactformulier, directe
   contactgegevens en kantoortijden.
-- **Blog** (`blog.html`): overzicht van artikelen. **Blogtemplate**
-  (`blog-template.html`): sjabloon voor een nieuw artikel.
+- **Info** (`info.html`): overzicht van artikelen. **Infotemplate**
+  (`info-template.html`): sjabloon voor een nieuw artikel.
 
 ### Placeholders om in te vullen
 
