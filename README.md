@@ -1,9 +1,9 @@
 # De Steunlijn — website
 
 Professionele, responsive website voor **De Steunlijn**, een organisatie die
-financiële instellingen koppelt aan ervaren, geregistreerde externe
-vertrouwenspersonen. Statische site in HTML, CSS en JavaScript — geen backend of
-build-stap nodig.
+accountants- en administratiekantoren en financieel dienstverleners in het MKB
+koppelt aan LVV-geregistreerde externe vertrouwenspersonen. Statische site in
+HTML, CSS en JavaScript — geen backend of build-stap nodig.
 
 ## Lokaal draaien
 
@@ -38,6 +38,8 @@ Ga daarna naar <http://localhost:8000>.
 ├── README.md
 ├── assets/
 │   ├── logo.png        # Logo (transparant, bronbestand)
+│   ├── hero.jpg        # Hero-afbeelding (vertrouwenspersoon)
+│   ├── collegas.jpg    # Afbeelding in de "waarom"-sectie
 │   ├── favicon.png     # Favicon (32×32, gegenereerd uit logo.png)
 │   └── apple-touch-icon.png  # Apple-touch-icon (180×180)
 ├── css/
@@ -53,7 +55,7 @@ De HTML is opgedeeld in duidelijk gemarkeerde secties (zie de
 Teksten staan rechtstreeks in de HTML en zijn daardoor eenvoudig te wijzigen.
 
 - **Landingspagina** (`index.html`): hero, "waarom", aanbod, "hoe het werkt",
-  vertrouwen/quote, CTA-banner en footer.
+  vertrouwen, CTA-banner en footer.
 - **Contactpagina** (`contact.html`): intro, contactformulier, directe
   contactgegevens en kantoortijden.
 
@@ -68,8 +70,7 @@ vervangen door de echte gegevens:
 | Telefoonnummer | `+31 (0)6 835 762 02` |
 | Adres | `Voetjesstraat 86C, 3081 HT Rotterdam` |
 | Kantoortijden | `ma–vr 09:00–17:00` |
-| Quote (vertrouwen-sectie) | `[Naam], [Functie], [Organisatie]` |
-| Privacyverklaring / Algemene voorwaarden | `href="#"` (nog geen pagina's) |
+| Privacyverklaring / Algemene voorwaarden | verwijderd tot de pagina's bestaan |
 | Open Graph-domein (`og:url`, `og:image`) | `https://www.desteunlijn.nl` (placeholder) |
 | Web3Forms access key (contactformulier) | `VUL_HIER_JE_ACCESS_KEY_IN` |
 
@@ -102,8 +103,8 @@ Het rode scheepstouw uit het logo komt subtiel terug in het ontwerp:
 - **Toegankelijkheid** — semantische HTML, `alt`-teksten, skip-link, focus-stijlen,
   `prefers-reduced-motion`, WCAG AA-contrast.
 - **SEO** — unieke `title` en `meta description` per pagina, logische
-  `h1`/`h2`-structuur, relevante zoektermen ("extern vertrouwenspersoon financiële
-  sector").
+  `h1`/`h2`-structuur, relevante zoektermen ("extern vertrouwenspersoon
+  accountantskantoren").
 - **Snel** — geen externe afhankelijkheden, systeemfonts, minimale assets.
 
 ## Favicon opnieuw genereren

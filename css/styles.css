@@ -482,6 +482,14 @@ p {
   mix-blend-mode: multiply;
 }
 
+/* Afbeelding binnen een sectie (bijv. "Waarom") */
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-top: var(--space-6);
+}
+
 /* 9. Sectie: waarom
    ========================================================================== */
 .why-grid {
