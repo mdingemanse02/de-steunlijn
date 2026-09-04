@@ -1308,6 +1308,14 @@ p {
   text-decoration: underline;
 }
 
+.blog-post__note {
+  font-size: 0.875rem;
+  color: var(--muted);
+  border-left: 3px solid var(--line);
+  padding-left: var(--space-4);
+  margin-top: var(--space-6);
+}
+
 @media (max-width: 1024px) {
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
